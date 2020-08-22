@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336BB4713390F78876F6D480 /* Pods_YoudevoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA82CFEC26F975788A42325 /* Pods_YoudevoApp.framework */; };
 		D068CC1424B0B9B8006DE9F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068CC1324B0B9B8006DE9F9 /* AppDelegate.swift */; };
 		D068CC1624B0B9B8006DE9F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068CC1524B0B9B8006DE9F9 /* SceneDelegate.swift */; };
 		D068CC1824B0B9B8006DE9F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D068CC1724B0B9B8006DE9F9 /* ViewController.swift */; };
 		D068CC1B24B0B9B8006DE9F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D068CC1924B0B9B8006DE9F9 /* Main.storyboard */; };
 		D068CC1D24B0B9BE006DE9F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D068CC1C24B0B9BE006DE9F9 /* Assets.xcassets */; };
 		D068CC2024B0B9BE006DE9F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D068CC1E24B0B9BE006DE9F9 /* LaunchScreen.storyboard */; };
+		D06A618B24EEEE7C000B718A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A618A24EEEE7C000B718A /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EA82CFEC26F975788A42325 /* Pods_YoudevoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoudevoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ABAA14950C840F07FEB5378 /* Pods-YoudevoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoudevoApp.release.xcconfig"; path = "Target Support Files/Pods-YoudevoApp/Pods-YoudevoApp.release.xcconfig"; sourceTree = "<group>"; };
+		AD22049D49233DC53B998381 /* Pods-YoudevoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoudevoApp.debug.xcconfig"; path = "Target Support Files/Pods-YoudevoApp/Pods-YoudevoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		D068CC1024B0B9B8006DE9F9 /* YoudevoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoudevoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D068CC1324B0B9B8006DE9F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D068CC1524B0B9B8006DE9F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D068CC1C24B0B9BE006DE9F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D068CC1F24B0B9BE006DE9F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D068CC2124B0B9BE006DE9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06A618A24EEEE7C000B718A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336BB4713390F78876F6D480 /* Pods_YoudevoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57A57A4D05005BA3DBB70478 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD22049D49233DC53B998381 /* Pods-YoudevoApp.debug.xcconfig */,
+				9ABAA14950C840F07FEB5378 /* Pods-YoudevoApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D068CC0724B0B9B8006DE9F9 = {
 			isa = PBXGroup;
 			children = (
 				D068CC1224B0B9B8006DE9F9 /* YoudevoApp */,
 				D068CC1124B0B9B8006DE9F9 /* Products */,
+				57A57A4D05005BA3DBB70478 /* Pods */,
+				E6C3B82A693CEE9FEFA2BFF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,7 @@
 		D06A618424EEEDF8000B718A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D06A618A24EEEE7C000B718A /* DataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -99,6 +119,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		E6C3B82A693CEE9FEFA2BFF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EA82CFEC26F975788A42325 /* Pods_YoudevoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D068CC2424B0B9BE006DE9F9 /* Build configuration list for PBXNativeTarget "YoudevoApp" */;
 			buildPhases = (
+				023345F5F70B2F94A24DFBC8 /* [CP] Check Pods Manifest.lock */,
 				D068CC0C24B0B9B8006DE9F9 /* Sources */,
 				D068CC0D24B0B9B8006DE9F9 /* Frameworks */,
 				D068CC0E24B0B9B8006DE9F9 /* Resources */,
+				31DEFB3D504FB9E14A6B5B04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,12 +195,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		023345F5F70B2F94A24DFBC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoudevoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31DEFB3D504FB9E14A6B5B04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoudevoApp/Pods-YoudevoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoudevoApp/Pods-YoudevoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YoudevoApp/Pods-YoudevoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D068CC0C24B0B9B8006DE9F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D068CC1824B0B9B8006DE9F9 /* ViewController.swift in Sources */,
+				D06A618B24EEEE7C000B718A /* DataModel.swift in Sources */,
 				D068CC1424B0B9B8006DE9F9 /* AppDelegate.swift in Sources */,
 				D068CC1624B0B9B8006DE9F9 /* SceneDelegate.swift in Sources */,
 			);
@@ -314,6 +387,7 @@
 		};
 		D068CC2524B0B9BE006DE9F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD22049D49233DC53B998381 /* Pods-YoudevoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +406,7 @@
 		};
 		D068CC2624B0B9BE006DE9F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ABAA14950C840F07FEB5378 /* Pods-YoudevoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

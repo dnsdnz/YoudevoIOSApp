@@ -1,0 +1,6 @@
+framework module Pods_YoudevoApp {
+  umbrella header "Pods-YoudevoApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
