@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -50,7 +50,6 @@
 				AD22049D49233DC53B998381 /* Pods-YoudevoApp.debug.xcconfig */,
 				9ABAA14950C840F07FEB5378 /* Pods-YoudevoApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -392,7 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD2RKYZB55;
-				INFOPLIST_FILE = YoudevoApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YoudevoApp/Helpers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD2RKYZB55;
-				INFOPLIST_FILE = YoudevoApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YoudevoApp/Helpers/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
