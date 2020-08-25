@@ -11,16 +11,43 @@ import UIKit
 class ArticlePageViewController: UIViewController {
 
     var articles = [ArticleItem]()
-    
+    var semaphore = DispatchSemaphore (value: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       let article1 = ArticleItem(image: #imageLiteral(resourceName: "Her Kız Kodlayabilir"), caption: "TurkishKit Özel Etkinliği", title: "Her Kız Kodlayabilir")
+       let article1 = ArticleItem(image: #imageLiteral(resourceName: "Sign In with Apple"), caption: "TurkishKit Özel Etkinliği", title: "Her Kız Kodlayabilir")
         let article2 = ArticleItem(image: #imageLiteral(resourceName: "Sign In with Apple"), caption: "TurkishKit Blog Yazısı", title: "Sign in with Apple")
         let article3 = ArticleItem(image: #imageLiteral(resourceName: "Dub Dub '19 Etkinliği"), caption: "TurkishKit Özel Etkinliği", title: "WWDC19 Özel Etkinliği")
             
         articles = [article1, article2, article3]
+    }
+    
+    
+    func getDataWithId(){
+       
+     let parameters = "{\n    \"news_id\":33\n}"
+     let postData = parameters.data(using: .utf8)
+
+     var request = URLRequest(url: URL(string: "http://www.haberler.youdevo.com/api/read.php?news_id=80")!,timeoutInterval: Double.infinity)
+     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+
+     request.httpMethod = "GET"
+     request.httpBody = postData
+
+     let task = URLSession.shared.dataTask(with: request) { data, response, error in
+       guard let data = data else {
+         print(String(describing: error))
+         return
+       }
+       print(String(data: data, encoding: .utf8)!)
+      self.semaphore.signal()
+     }
+
+     task.resume()
+     semaphore.wait()
+
+
     }
 
 }
