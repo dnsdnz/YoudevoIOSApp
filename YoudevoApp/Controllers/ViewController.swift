@@ -9,15 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
-    @IBOutlet weak var lblTest: UILabel!
     
-    var testVar = ""
     var semaphore = DispatchSemaphore (value: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         
     }
