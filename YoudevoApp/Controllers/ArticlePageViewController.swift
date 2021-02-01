@@ -18,7 +18,7 @@ class ArticlePageViewController: UIViewController {
 
        let article1 = ArticleItem(image: #imageLiteral(resourceName: "Sign In with Apple"), caption: "TurkishKit Özel Etkinliği", title: "Her Kız Kodlayabilir")
         let article2 = ArticleItem(image: #imageLiteral(resourceName: "Sign In with Apple"), caption: "TurkishKit Blog Yazısı", title: "Sign in with Apple")
-        let article3 = ArticleItem(image: #imageLiteral(resourceName: "Dub Dub '19 Etkinliği"), caption: "TurkishKit Özel Etkinliği", title: "WWDC19 Özel Etkinliği")
+        let article3 = ArticleItem(image: #imageLiteral(resourceName: "Dub Dub '19 Etkinliği"), caption: "TurkishKit Özel Etkinliği", title: "WWDC19 Özel Etkinliği")
             
         articles = [article1, article2, article3]
     }
@@ -29,7 +29,7 @@ class ArticlePageViewController: UIViewController {
      let parameters = "{\n    \"news_id\":33\n}"
      let postData = parameters.data(using: .utf8)
 
-     var request = URLRequest(url: URL(string: "http://www.haberler.youdevo.com/api/read.php?news_id=80")!,timeoutInterval: Double.infinity)
+     var request = URLRequest(url: URL(string: "link")!,timeoutInterval: Double.infinity)
      request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
      request.httpMethod = "GET"
