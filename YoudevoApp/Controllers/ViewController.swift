@@ -22,10 +22,10 @@ class ViewController: UIViewController {
            func postData(){
             
             
-            let parameters = "{\n    \"title\": \"deneme 9 \",\n    \"category\": \"deneme 9\",\n    \"content\": \"deneme 9\",\n    \"pic_name\": \"/Users/macbookair/Desktop/photo/DSCN0343.png\"\n}"
+            let parameters = "{\n    \"title\": \"deneme 9 \",\n    \"category\": \"deneme 9\",\n    \"content\": \"deneme 9\",\n    \"pic_name\": \"path\"\n}"
             let postData = parameters.data(using: .utf8)
 
-            var request = URLRequest(url: URL(string: "http://www.haberler.youdevo.com/api/insert.php")!,timeoutInterval: Double.infinity)
+            var request = URLRequest(url: URL(string: "link")!,timeoutInterval: Double.infinity)
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
             request.httpMethod = "POST"
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     func getData(){
               
 
-        var request = URLRequest(url: URL(string: "http://www.haberler.youdevo.com/api/read.php")!,timeoutInterval: Double.infinity)
+        var request = URLRequest(url: URL(string: "link")!,timeoutInterval: Double.infinity)
         request.httpMethod = "GET"
 
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
            let parameters = "{\n    \"news_id\":33\n}"
            let postData = parameters.data(using: .utf8)
 
-           var request = URLRequest(url: URL(string: "http://www.haberler.youdevo.com/api/read.php?news_id=80")!,timeoutInterval: Double.infinity)
+           var request = URLRequest(url: URL(string: "link")!,timeoutInterval: Double.infinity)
            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
            request.httpMethod = "GET"
@@ -98,7 +98,7 @@ class ViewController: UIViewController {
        let parameters = "{\n    \"news_id\":80,\n    \"title\":\"update test\"\n}"
        let postData = parameters.data(using: .utf8)
 
-       var request = URLRequest(url: URL(string: "http://www.haberler.youdevo.com/api/update.php")!,timeoutInterval: Double.infinity)
+       var request = URLRequest(url: URL(string: "link")!,timeoutInterval: Double.infinity)
        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
        request.httpMethod = "PUT"
@@ -127,7 +127,7 @@ class ViewController: UIViewController {
              let parameters = "{\n    \"news_id\":33\n}"
              let postData = parameters.data(using: .utf8)
 
-             var request = URLRequest(url: URL(string: "http://www.haberler.youdevo.com/api/delete.php")!,timeoutInterval: Double.infinity)
+             var request = URLRequest(url: URL(string: "link")!,timeoutInterval: Double.infinity)
              request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
              request.httpMethod = "DELETE"
